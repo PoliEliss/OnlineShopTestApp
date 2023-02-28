@@ -70,9 +70,10 @@
         android:background="@drawable/custom_button_sign_in"
         android:fontFamily="@font/montserrat"
         android:text="Sign in"
+        android:textStyle="bold"
         android:textAllCaps="false"
         android:textColor="#EAEAEA"
-        android:textSize="14sp" />
+        android:textSize="18sp" />
 
 
     <androidx.appcompat.widget.LinearLayoutCompat

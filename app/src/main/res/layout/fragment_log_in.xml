@@ -1,14 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
     tools:context=".SigInFragment">
-
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="72dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/welcome_back"
+        android:textColor="#161826"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+    <EditText
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="29dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/custom_edit_text"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:hint="First name"
+        android:inputType="textEmailAddress"
+        android:textColor="#7B7B7B"
+        android:textSize="11sp" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutCurrencyConvertor"
+        android:layout_width="match_parent"
+       app:passwordToggleEnabled="true"
+        app:hintEnabled="false"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="42dp"
+        android:layout_height="29dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etCurrencyConvertor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:paddingStart="40dp"
+            android:textColor="#7B7B7B"
+            android:fontFamily="@font/montserrat"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:background="@drawable/custom_edit_text"
+            android:ems="15" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-</FrameLayout>
+    <Button
+        android:id="@+id/buttonSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginTop="99dp"
+        android:background="@drawable/custom_button_sign_in"
+        android:fontFamily="@font/montserrat"
+        android:text="Login"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="#EAEAEA"
+        android:textSize="18sp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
